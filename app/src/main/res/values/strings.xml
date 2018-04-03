@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Slot_Machine</string>
+    <string name="start">START</string>
+    <string name="rules">RULES</string>
+    <string name="score">SCORE:</string>
+    <string name="back">Back to Game</string>
+    <string name="desc">Spin the wheel! Leafy kitty is worth 10 points, fur ball is worth 20, and the kitty going through an existential crisis is worth 50!</string>
+</resources>

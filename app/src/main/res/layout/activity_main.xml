@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.slot_machine.MainActivity">
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="100dp"
+        android:columnCount="3"
+        android:padding="2dp"
+        android:rowCount="1">
+
+        <ImageView
+            android:id="@+id/rect1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@drawable/rectangle" />
+
+        <ImageView
+            android:id="@+id/rect2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@drawable/rectangle" />
+
+        <ImageView
+            android:id="@+id/rect3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:background="@drawable/rectangle"
+
+            />
+    </GridLayout>
+
+    <SeekBar
+        android:paddingTop="10dp"
+        android:id="@+id/scale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid"
+        android:max="2"
+        />
+   <TextView
+       android:id="@+id/score"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/score"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/scale"
+       android:layout_marginBottom="20dp"
+       android:textSize="25sp"
+       />
+
+
+    <Button
+        android:id="@+id/play"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/start"
+        android:layout_below="@id/score"
+        android:onClick="buttonPressed"
+        />
+    <Button
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play"
+        android:layout_centerHorizontal="true"
+        android:text="@string/rules"
+        android:onClick="rulePressed"
+        />
+
+</RelativeLayout>
